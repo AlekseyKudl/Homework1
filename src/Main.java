@@ -263,8 +263,42 @@ public class Main {
                     }
                     }
                 }
+
+
             }
+        //урок 5
+        // задание 1
+
+        int clientOS = 1;
+
+        switch (clientOS) {
+            case 0:
+                System.out.println("iOS");
+                break;
+            case 1:
+                System.out.println("android");
+                break;
+            default:
+                System.out.println("продолжаем на ПК");
+
+    }
+    //задание 2
+       int clientDeviceYear = 2014;
+        int clientOS = 1;
+
+        if (clientDeviceYear < 2015) {
+
+                System.out.println("iOS");
+                break;
+            case 1:
+                System.out.println("android");
+                break;
+            default:
+                System.out.println("продолжаем на ПК");
+
         }
+    }
+
 
 
 
