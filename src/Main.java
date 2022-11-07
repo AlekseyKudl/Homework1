@@ -283,21 +283,39 @@ public class Main {
 
     }
     //задание 2
-       int clientDeviceYear = 2014;
-        int clientOS = 1;
+       int clientDeviceYear = 2016;
+        clientOS = 0;
 
         if (clientDeviceYear < 2015) {
+            switch (clientOS) {
+                case 0:
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                    break;
+                case 1:
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                    break;
+                default:
+                    System.out.println("продолжаем на ПК");
+            }
+        } else {
+            switch (clientOS) {
+                case 0:
+                    System.out.println("iOS");
+                    break;
+                case 1:
+                    System.out.println("android");
+                    break;
+                default:
+                    System.out.println("продолжаем на ПК");
+            }
 
-                System.out.println("iOS");
-                break;
-            case 1:
-                System.out.println("android");
-                break;
-            default:
-                System.out.println("продолжаем на ПК");
 
-        }
+
+
+            }
+
     }
+    // задание 3
 
 
 
