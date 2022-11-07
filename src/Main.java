@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     //Переменные часть 1
     public static void main(String[] args) {
@@ -222,7 +224,7 @@ public class Main {
             System.out.println("кататься на аттракционе нельзя");
         } else {
             if (adult != false) {
-                System.out.println( "можно кататься на аттракционе в сопровождении взрослого" );
+                System.out.println("можно кататься на аттракционе в сопровождении взрослого");
             } else {
                 System.out.println("можно кататься на аттракционе самостоятельно");
             }
@@ -261,11 +263,11 @@ public class Main {
                         System.out.println("минимум 2 числа равны");
                         //вывод корректного ответа еще нужно пару тройку ветвлений
                     }
-                    }
                 }
-
-
             }
+
+
+        }
         //урок 5
         // задание 1
 
@@ -281,9 +283,9 @@ public class Main {
             default:
                 System.out.println("продолжаем на ПК");
 
-    }
-    //задание 2
-       int clientDeviceYear = 2016;
+        }
+        //задание 2
+        int clientDeviceYear = 2016;
         clientOS = 0;
 
         if (clientDeviceYear < 2015) {
@@ -310,14 +312,75 @@ public class Main {
             }
 
 
-
-
+        }
+        //задание 3
+        var god = 1817;
+        boolean god4 = god % 4 == 0;
+        boolean god100 = god % 100 != 0;
+        boolean god400 = god % 400 == 0;
+        if (god4 && god100 && god400 == true) {
+            System.out.println(god + " год не является високосным");
+        } else {
+            if (god4 == true) {
+                System.out.println(god + " год является високосным");
+            } else {
+                System.out.println(god + " год не является високосным");
             }
 
+        }
+
+        //задание 4
+        int deliveryDistance = 10;
+        int dayDilevery = 1;
+        if (deliveryDistance <= 20) {
+            System.out.println("Потребуется дней: " + dayDilevery);
+        } else {
+            if (deliveryDistance > 20 && deliveryDistance <= 60) {
+                dayDilevery = dayDilevery + 1;
+                System.out.println("Потребуется дней: " + dayDilevery);
+            } else {
+                dayDilevery = dayDilevery + 2;
+                System.out.println("Потребуется дней: " + dayDilevery);
+            }
+        }
+
+        //задание 5
+        int monthNumber = 13;
+        switch (monthNumber) {
+            case 0:
+                System.out.println("нет такого месяца");
+
+            case 1:
+                System.out.println("Зима");
+                break;
+            case 3:
+                System.out.println("весна");
+                break;
+            case 6:
+                System.out.println("лето");
+                break;
+            case 9:
+                System.out.println("осень");
+                break;
+            case 12:
+                System.out.println("зима");
+                break;
+            default:
+                System.out.println("такого месяца нет");
+        }
+
+
+
     }
-    // задание 3
+}
 
 
 
 
-    }
+
+//boolean divYear00 = (testYear % 100) = 0;
+//boolean divYear400 = (testYear % 400) = 0;
+
+//if (divYear4 && divYear100  && divYear400 = true)
+// задание 3
+// високосный год
