@@ -314,33 +314,26 @@ public class Main {
 
         }
         //задание 3
-        var god = 1817;
-        boolean god4 = god % 4 == 0;
-        boolean god100 = god % 100 != 0;
-        boolean god400 = god % 400 == 0;
-        if (god4 && god100 && god400 == true) {
-            System.out.println(god + " год не является високосным");
+        var god = 1972;
+        if ((god % 4 == 0 && god % 100 != 0) || god % 400 == 0) {
+            System.out.println(god + " год является високосным");
         } else {
-            if (god4 == true) {
-                System.out.println(god + " год является високосным");
-            } else {
-                System.out.println(god + " год не является високосным");
-            }
-
+            System.out.println(god + " год не является високосным");
         }
+
 
         //задание 4
         int deliveryDistance = 10;
-        int dayDilevery = 1;
-        if (deliveryDistance <= 20) {
-            System.out.println("Потребуется дней: " + dayDilevery);
+        int dayDelivery = 1;
+        if ( deliveryDistance <= 20) {
+            System.out.println("Потребуется дней: " + dayDelivery);
         } else {
             if (deliveryDistance > 20 && deliveryDistance <= 60) {
-                dayDilevery = dayDilevery + 1;
-                System.out.println("Потребуется дней: " + dayDilevery);
+                dayDelivery = dayDelivery + 1;
+                System.out.println("Потребуется дней: " + dayDelivery);
             } else {
-                dayDilevery = dayDilevery + 2;
-                System.out.println("Потребуется дней: " + dayDilevery);
+                dayDelivery = dayDelivery + 2;
+                System.out.println("Потребуется дней: " + dayDelivery);
             }
         }
 
